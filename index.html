@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Food Hive</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta charset="utf-8" />
+     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="keywords" content="Food Hive" />
+   
+
+
+
+     <!---Common css---->
+        <link href="css/common.css" rel="stylesheet" type="text/css" />
+        <!----Media queries css--->
+         <link href="css/style.css" type="text/css" rel="stylesheet" />
+         <link href="css/theme1024.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme990.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme768.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme480.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme320.css" rel="stylesheet" type="text/css" />
+        <link href="css/theme319.css" rel="stylesheet" type="text/css" />
+    <link href="css/quickweb.css" rel="stylesheet" type="text/css" />
+     <link href="fonts/style.css" rel="stylesheet" type="text/css" />   
+   <link href="css/slider_css.css" type="text/css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900' rel='stylesheet' type='text/css'/>
+
+
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/plugin.js"></script>
+</head>
+<body>
+    <script>(function(){var js,fs,d=document,id="tars-widget-script",b="https://tars-file-upload.s3.amazonaws.com/bulb/";if(!d.getElementById(id)){js=d.createElement("script");js.id=id;js.type="text/javascript";js.src=b+"js/widget.js";fs=d.getElementsByTagName("script")[0];fs.parentNode.insertBefore(js,fs)}})();window.tarsSettings = {"convid":"ISRWPv"};</script>
+    <div class="main">
+                    <header class="header">
+                <div class="container">
+                    <div class="col-12">
+                    <div class="col-4 mb-11 logo-set">
+                        <div class="logo" style="margin-top: 5px;"><img src="blacklogo.png" /></div>
+
+                    </div>
+
+                    <nav class="mob-menu-icon mb-1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </nav>
+
+                        
+                    <nav class="col-8 menu mob-menu pull-right">
+                        
+                         <nav class="mob-menu-icon" style="padding: 26px 26px;width: 100%;box-sizing: border-box;border-bottom:2px solid #1565C0; ">
+                        
+                        <span class="icon-bar slide-icon-menu-color"></span>
+                        <span class="icon-bar slide-icon-menu-color"></span>
+                        <span class="icon-bar slide-icon-menu-color"></span>
+
+                    </nav>
+                       <!-- <div class="menu-item-box center "><a href="#" class="menu_link">Home</a>
+
+                            <div class="sub_cata" style="height: 200px;position: absolute;z-index: 99999;background-color: #000;margin-top: 29px;">
+                                Test sub cata
+                            
+                            </div>
+
+                        </div>-->
+                        <div class="menu-item-box center "><a href="#home" class="menu-link">Home</a></div>
+                        <div class="menu-item-box center "><a href="#about" class="menu-link">About</a></div>
+                        <div class="menu-item-box center ">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Services</button>
+                            <div id="myDropdown" class="dropdown-content">
+                             <ul><li><a href="book_table.html">Book Table</a></li>
+                             <li> <a href="#Order_drop">Order Online</a></li>
+                              <li><a href="view_menu.html" target="_blank">View Menu</a></li>
+                              <li><a href="gallery.html">View Gallery</a></li>
+                            </ul> 
+                            </div>
+                          </div>
+                          </div>
+                        <div class="menu-item-box center "><a href="#services" class="menu-link">Team</a></div>
+                        <div class="menu-item-box center "><a href="#contact" class="menu-link">Contact</a></div>
+                        
+                        
+                        </nav>
+                        
+
+
+                       
+
+                    </div>
+                        </div>
+                        <style>
+                            .call-action-but:hover{
+                                font-weight: bold;
+                               
+                            }
+                            .view-template:hover{
+             font-weight: bold;
+             background-color: #64A548;
+             border-radius: 4px;
+                            }
+                            .dropbtn:hover{
+                                
+                                font-weight: bold;
+                                color: black;
+                                text-decoration: underline;
+                        
+                            }
+                           .menu-link:hover{
+                            font-weight: bold;
+                                color: black;
+                                text-decoration: underline;
+
+                            }
+                           .button-1:hover{
+font-weight: bold;
+border-radius: 4px;
+            }
+            .dropbtn {
+                font-style: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+   
+  color: black;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+                        
+                        </style>
+                        <script>
+                            /* When the user clicks on the button, 
+                            toggle between hiding and showing the dropdown content */
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+                            
+                            // Close the dropdown if the user clicks outside of it
+                            window.onclick = function(event) {
+                              if (!event.target.matches('.dropbtn')) {
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for (i = 0; i < dropdowns.length; i++) {
+                                  var openDropdown = dropdowns[i];
+                                  if (openDropdown.classList.contains('show')) {
+                                    openDropdown.classList.remove('show');
+                                  }
+                                }
+                              }
+                            }
+                            </script>
+            </header>
+        <section class="banner top" id="home" style="background-image:url(image/banner1.jpg);">
+        <div class="texture">
+        <div class="container">
+           <div class="col-5 mb-12 mb-center banner-box">
+               
+               <div class="banner_line1">Good Food Is The Foundation Of Genuine Happines </div>
+               <div class="banner_brief_text">You are just one step away to unlock your most exotic food experience!</div>
+               <div    class="mb-center mb-12">
+               <div class="button-1" style="border-radius: 4px;">
+                   <a href="#">Register Here</a></div></div>          
+           </div>
+            <div class="col-7 mb-12 banner-image"  style="position:relative;"><!--<img src="image/banner2_image.png"  />--></div>
+        </div>
+            </div>
+       <!--  <div class="col-12 banner-extra-div color-black-s-light">
+ 
+    </div>-->
+    </section>
+
+   
+    <section class="choose-theme section-padding color-white"  id="about">
+        <div class="container">
+            <div class="main-title font-color-m-light" style="font-weight: 600;">About Us</div>
+            <p class="main-content">Hunger Hive is one of best multi-cuisine resturant in the entire city! <br><br> Located right in the middle of city, Hunger Hive provides easy access for dine-in as well as take away.</p>
+            
+            <div class="col-8 about-image"><img src="image/22.png" style="" /></div>
+            <div class="col-4 padding-lr" style="box-sizing:border-box;" >
+                <div class="sub-title font-color-s-light">
+                    Everything you need to know
+                </div>
+
+                <div class="content-box" style="">Whether you need a peaceful dining experience with family or you need to order  online. <br> We have got it all!
+
+                    
+                </div>
+                <a href="Project.html"><div class="view-template" style="  border-radius: 4px;">Give Feedback!</div></a>
+            </div>
+       
+            </div>
+
+    </section>
+    <section class="multiple-template section-padding color-light-white" id="portfolio">
+                <div class="container">
+                    <div class="main-title font-color-s-light" style="font-weight: 600;">Our Services</div>
+                    <p class="main-content"> Hey Dear Customer, We have got the following services available for you- </p>
+
+                   
+                    
+                    <div class="col-3" style="padding:10px;">
+                   <div style="height:235px;border:1px solid #f5f5f5;border-radius:3px;box-sizing:border-box">
+                    <div class="template-header" style="padding: 10px 0px;background-color: rgb(255, 255, 255);border-bottom: 1px solid rgb(222, 222, 222)">
+                        <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:10px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                        <div style="clear:both"></div>
+                    </div>
+
+                        <div class="temp-data-box" style=" background-image: url(image/Services1.jpeg);
+                        height:210px;
+                         background-color:#fff; 
+                         position:relative;
+                          overflow:hidden ;
+                          background-position:center 0px;
+                          background-size:cover;" >
+
+                            
+                            <div class="temp-data-box-overlay" style="position:absolute;top:0px;left:0px;background-color:rgba(0, 0, 0, 0.5);width:100%;height:100%;text-align:center;">
+                                <span style="width:1px;height:100%;display:inline-block;vertical-align:middle;"></span>
+                                <a href="book_table.html"><span class="button-2  ">
+                                    Book Table
+                                </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-3" style="padding:10px;">
+                        <div style="height:235px;border:1px solid #f5f5f5;border-radius:3px;box-sizing:border-box">
+                         <div class="template-header" style="padding: 10px 0px;background-color: rgb(255, 255, 255);border-bottom: 1px solid rgb(222, 222, 222)">
+                             <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:10px;"></span>
+                              <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                              <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                             <div style="clear:both"></div>
+                         </div>
+     
+                             <div class="temp-data-box" style =" background-image: url(image/Services5.jpg);
+                             height:210px;
+                              background-color:#fff; 
+                              position:relative;
+                               overflow:hidden ;
+                               background-position:center 0px;
+                               background-size:cover;">
+     
+                                 
+                                 <div class="temp-data-box-overlay" style="position:absolute;top:0px;left:0px;background-color:rgba(0, 0, 0, 0.5);width:100%;height:100%;text-align:center;">
+                                     <span style="width:1px;height:100%;display:inline-block;vertical-align:middle;"></span>
+                                     <a href="#"><span class="button-2   ">
+                                         Order Online
+                                     </span></a>
+                                 </div>
+                             </div>
+                         </div>
+                         </div>
+                    <div class="col-3" style="padding:10px;">
+                   <div style="height:235px;border:1px solid #f5f5f5;border-radius:3px;box-sizing:border-box">
+                    <div class="template-header" style="padding: 10px 0px;background-color: rgb(255, 255, 255);border-bottom: 1px solid rgb(222, 222, 222)">
+                        <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:10px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                        <div style="clear:both"></div>
+                    </div>
+
+                        <div class="temp-data-box"style =" background-image: url(image/Services3.jpeg);
+                        height:210px;
+                         background-color:#fff; 
+                         position:relative;
+                          overflow:hidden ;
+                          background-position:center 0px;
+                          background-size:cover;" >
+
+                       
+                            <div class="temp-data-box-overlay" style="position:absolute;top:0px;left:0px;background-color:rgba(0, 0, 0, 0.5);width:100%;height:100%;text-align:center;">
+                                <span style="width:1px;height:100%;display:inline-block;vertical-align:middle;"></span>
+                                <a href="view_menu.html" target="_blank"><span class="button-2   ">
+                                    View Menu
+                                </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-3" style="padding:10px;">
+                   <div style="height:235px;border:1px solid #f5f5f5;border-radius:3px;box-sizing:border-box">
+                    <div class="template-header" style="padding: 10px 0px;background-color: rgb(255, 255, 255);border-bottom: 1px solid rgb(222, 222, 222)">
+                        <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:10px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                         <span style="height: 5px;width: 5px;background-color: #929292;display: block;border-radius: 15px;float:left;margin-left:3px;"></span>
+                        <div style="clear:both"></div>
+                    </div>
+
+                        <div class="temp-data-box"style =" background-image: url(image/Services4.jpg);
+                             height:210px;
+                              background-color:#fff; 
+                              position:relative;
+                               overflow:hidden ;
+                               background-position:center 0px;
+                               background-size:cover;">
+
+                            
+                            <div class="temp-data-box-overlay" style="position:absolute;top:0px;left:0px;background-color:rgba(0, 0, 0, 0.5);width:100%;height:100%;text-align:center;">
+                                <span style="width:1px;height:100%;display:inline-block;vertical-align:middle;"></span>
+                                <a href="gallery.html"><span class="button-2   ">
+                                   View Gallery
+                                </span></a>
+                            </div>
+                        </div>
+                   
+                    </div>
+                    </div>
+                  
+
+               </div>
+
+    </section>
+
+    <section class="call-action section-padding color-green">
+        <div class="container">
+          <div class="col-8">
+              <div class="call-title">Avail Exciting Discounts & Offers , Become A Lucky Customer!</div>
+          </div>
+          <div class="col-4 padding-tb">
+              <div class="call-action-but" style="text-align:center; border-radius: 4px;"><a href="coupon.html" target="_blank">Apply Coupon</a></div>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="service section-padding color-white" id="services">
+        <div class="container">
+                    <div class="main-title font-color-m-light" style="font-weight: 600;">Our Highlights</div>
+            <p class="main-content">The Hunger Hive Cafe was inaugrated on 1st April 2021, since then we have maintained our legacy of providing excellent food and a healthy ambience to the people </p>
+            <div class="service-box">
+            <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-mail-alt"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name">Customer Of The Day</div>
+                        <div class="feature-content">Mr. Yuv Garg was our customer of the day,giving us the most useful feedback.</div>
+                    </div>
+                    
+                
+            </div>
+            <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-cloudapp"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name">Dish Of The Day</div>
+                        <div class="feature-content">The Dish of the day was Masala Dosa</div>
+                    </div>
+                    
+                
+            </div>
+           <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-code"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name">Staff Of The Day</div>
+                        <div class="feature-content">Mr. Vikas Gupta was the staff of the day, catering over 50+ customers</div>
+                    </div>
+                    
+                
+            </div>
+                 <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-chart-bar"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name">Customer Reviews</div>
+                        <div class="feature-content">“Their brunch is awesome, I love the avocado toast and the California focaccia. Pizza is really good as well.”<br>- Sunil Sharma.</div>
+                    </div>
+                    
+                
+            </div>
+            <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-monitor"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name"></div>
+                        <div class="feature-content">“Best Pizza EVER! Not just on the lower Cape…. anywhere!”<br>- Khyati Mishra.</div>
+                    </div>
+                    
+                
+            </div>
+           <div class="col-4 mb-12 padding-tblr margin-bottom-30">
+                    <div class="col-3 mb-2 service-icon">
+                        <i class="quickweb-icon-lock"></i>
+                    </div>
+                    <div class="col-9 mb-10">
+                        <div class="feature-name"></div>
+                        <div class="feature-content">“One of the best places I've eaten near Bawana,DTU. Great mocktails, awesome.”<br>- Anjali Bansal.</div>
+                    </div>
+                    
+                
+            </div>
+                </div>
+        </div>
+    </section>
+
+    <!--<section class="team section-padding color-light-white" id="team">
+        <div class="container">
+           <div class="main-title font-color-m-light" style="font-weight: 600;">Our Creative Minds </div>
+            <p class="main-content">We are here to provide you with the best and the most time efficient services</p>
+      
+            
+              <div class="col-3 team-member">
+                  <div class="team-image" style="overflow:hidden;text-align:center;background-image:url(image/team4.jpg);">
+
+                          <span style="width:0.5px;height:80%;display:flex;"></span>
+                          <div class="social-link"  style="vertical-align: middle;display: flex;flex-direction: row;">
+                             <a href="#"> <i class="quickweb-icon-facebook"></i></a><a href="#"> <i class="quickweb-icon-twitter"></i></a><a href="#"> <i class="quickweb-icon-gplus-1"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                <div class="team-name">Vaibhav Arya</div>
+                <div class="team-position">Founder</div>
+            </div>
+            <div class="col-3  team-member" >
+                 <div class="team-image" style="overflow:hidden;text-align:center;background-image:url(image/team2.jpg);">
+                <div class="team-overlay">
+
+                          <span style="width:0.5px;height:80%;display:flex; flex-direction: row;"></span>
+                          <div class="social-link"  style="vertical-align: middle;display: flex;flex-direction: row; ">
+                             <a href="#"> <i class="quickweb-icon-facebook"></i></a><a href="#"> <i class="quickweb-icon-twitter"></i></a><a href="#"> <i class="quickweb-icon-gplus-1"></i></a>
+                          </div>
+                      </div>
+                 </div>
+              <div class="team-name" style="">Utsav Joshi</div>
+                <div class="team-position">Founder</div>
+            </div>
+           
+          <div class="col-3 team-member">
+                <div class="team-image" style="overflow:hidden;text-align:center;background-image:url(image/team1.jpg);">
+                <div class="team-overlay">
+
+                          <span style="width:0.5px;height:80%;display:flex; flex-direction: row;"></span>
+                          <div class="social-link"  style="vertical-align: middle;display: flex; flex-direction: row;">
+                              <a href="#"> <i class="quickweb-icon-facebook"></i></a><a href="#"> <i class="quickweb-icon-twitter"></i></a><a href="#"> <i class="quickweb-icon-gplus-1"></i></a>
+                          </div>
+                      </div>
+                </div>
+                <div class="team-name">Suyash Tyagi</div>
+                <div class="team-position">UML Designer</div>
+            </div>
+          
+              </div>
+    </section>
+-->
+
+        <!--<section class="key-feature section-padding color-white">
+        <div class="container">
+              <div class="main-title font-color-m-light">Features for Your Online Business</div>
+            <p class="main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae nibh nisl. Cras et mauris eget lorem ultricies ferme ntum a in diam. </p>
+
+            <div class="col-5  padding-lr" >
+               <div class="col-12 feature-box" style="padding:5px 0px;">
+                   <div class="col-2 feature-icon"><i class="quickweb-icon-monitor"></i></div>
+                   <div class="col-10 content-box">
+                       <div class="feature-name">Resposive design</div>
+                        <div class="feature-content">Cras tempus orci massa, id hendrerit mi egestas vitae class aptent taciti.</div>
+                       </div>
+                  
+               </div>
+
+                <div class="col-12 feature-box" style="padding:5px 0px;">
+                    
+                   <div class="col-2 feature-icon"><i class="quickweb-icon-chart-pie-1"></i></div>
+                 <div class="col-10 content-box">
+                       <div class="feature-name">Easy Customization</div>
+                        <div class="feature-content">Cras tempus orci massa, id hendrerit mi egestas vitae class aptent taciti.</div>
+                       </div>
+               </div>
+
+                  <div class="col-12 feature-box" style="padding:5px 0px;">
+                   <div class="col-2 feature-icon"><i class="quickweb-icon-sliders"></i></div>
+                  <div class="col-10 content-box">
+                       <div class="feature-name">Step to Step Guide</div>
+                        <div class="feature-content">Cras tempus orci massa, id hendrerit mi egestas vitae class aptent taciti.</div>
+                       </div>
+               </div>
+                <div class="col-12 feature-box" style="padding:5px 0px;">
+                   <div class="col-2 feature-icon"><i class="quickweb-icon-cloud-1"></i></div>
+                  <div class="col-10 content-box">
+                       <div class="feature-name">Secure and Reliable</div>
+                        <div class="feature-content">Cras tempus orci massa, id hendrerit mi egestas vitae class aptent taciti.</div>
+                       </div>
+               </div>
+
+            </div>
+            
+            <div class="col-7" style="">
+                <div class="col-12 feature-img center" style="">
+                <img src="image/monitor.png" /></div>
+            </div>
+        </div>
+    </section>-->
+    <section class="happy-client section-padding color-white" id="testimonial">
+        <div class="container">
+              <div class="main-title font-color-m-light"style="font-weight: 600;"><i class="quickweb-icon-smile" ></i>Move the world with food</div>
+            
+           
+            <div id="main_slider">
+                 <div class="thumb_slider" >
+            <div class="thumbs quote-box" style="padding:25px 0px;">
+                
+										<i class="quickweb-icon-quote-right" style="padding:0px 15px;font-size: 22px;color:#7d7d7d;"></i></p>
+                
+                <h5 class="quote-company-position center"></h5>
+
+
+            </div>
+                     <div class="thumbs quote-box" style="padding:25px 0px;">
+                <p class="quote-text center"><i class="quickweb-icon-quote-left" style="padding:0px 15px;font-size: 22px;color:#7d7d7d;"></i>Hover Around The World And Get To Know The World Better
+										<i class="quickweb-icon-quote-right" style="padding:0px 15px;font-size: 22px;color:#7d7d7d;"></i></p>
+                <h2 class="quote-company-name center" style="margin-top:25px">Discover Wit Food </h2>
+                <h5 class="quote-company-position center"></h5>
+
+
+            </div>
+                     </div>
+                <div class="prev" style=""><i class="quickweb-icon-left-open-1"></i></div>
+                <div class="next" style=""><i class="quickweb-icon-right-open-1"></i></div>
+                
+                </div>
+        </div>
+    </section>
+
+    <section class="map color-light-white" id="contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387142.8401123931!2d-74.25819618221217!3d40.70583163620996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2s!4v1452786491975" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    
+    <section class="contact-address section-padding color-light-white">
+        <div class="container">
+        <div class="col-12">
+            <div class="contact-box col-4">
+                <div class="col-12 contact-icon"><i class="quickweb-icon-direction"></i></div> 
+                          <div class="col-12 contact-title">New Delhi <br /> India</div>
+
+                      </div>
+                   <div class="contact-box col-4">
+                       <div class="col-12 contact-icon"><i class="quickweb-icon-phone"></i></div>
+                       <div class="col-12 contact-title">+0542-258942</div>
+
+                   </div> 
+                <div class="contact-box col-4">
+                     <div class="col-12 contact-icon"><i class="quickweb-icon-mail-alt"></i></div>
+                      <div class="col-12 contact-title">info@hungerhive.com</div>
+                </div>
+
+            
+    </div></div>
+            </section>
+     
+    <section class="contact section-padding color-white">
+        <div class="container">
+            <div class="main-title font-color-m-light" style="font-weight: 600;">Contact Us</div>
+            <p class="main-content">We are always free to solve your queries. <br> Reach Us Out At: <br>Contacts: 0542-258942 , 7007828718 </p>
+            <form action="MAILTO:gargk13@gmail.com"  method="post" enctype="text/plain">
+            <div class="col-12">
+                <div class="textbox-set col-12">
+                    <div class="col-6 mb-6 textbox-box padding-tblr"><input type="text" class="textbox" placeholder="Name*" id="name" /></div>
+                    <div class="col-6 mb-6 textbox-box padding-tblr"><input type="text" class="textbox" placeholder="Phone" /></div>
+                    <div class="col-12 textbox-box padding-tblr"><input type="text" class="textbox" placeholder="Email*" id="email" /></div>
+                    
+                    <div class="col-12 textbox-box padding-tblr"><textarea  class="col-12 textbox" placeholder="Message*" style="height:100px;padding:10px 0px;resize:none;" id="message" ></textarea></div>
+
+                    <div class="send padding-lr"><button id="send_email" value="Send" class="view-template" style="border:none;border-bottom: 2px solid #64A548;" onclick="getCheck()">Send</button></div>
+                </div>
+            </div>
+                </form> 
+            </div>
+        </section>
+
+        <section class="footer">
+            
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="col-12">
+                        <div class="col-6 mb-6" style="color:#606873">
+                            <div class="footer-menu" style="vertical-align:middle;">
+                             </div>
+                        </div>
+                <div class="col-6 mb-6 social right"><div class="col-3"><i class="quickweb-icon-facebook"></i></div><div class="col-3"><i class="quickweb-icon-twitter"></i></div><div class="col-3"><i class="quickweb-icon-youtube"></i></div><div class="col-3"><i class="quickweb-icon-gplus-1"></i></div></div>
+                    </div>
+              <div class="col-12 creator" style="padding-top:25px;">
+                <div class="col-6 copyright">©HungerHive 2023 All Rights Reserved. </div>
+                <div class="col-6 design-by">
+                    <div class="col-8" style="color: #E5E5E5;font-weight: 100;font-size: 15px; color: #929292; margin-left: 120px; margin-bottom: 30px;"><a href="Founders.html" target="_blank"">Made By -Vaibhav Arya -Utsav Joshi -Suyash Tyagi</a>
+             </div>
+            </div>
+            </div>
+        </section>
+
+        </div>
+    <script type="text/javascript">
+        thumb_slider({
+
+            thumbs_to_show: 1,
+            thumbs_to_move: 1,
+            thumbs_width: 0,
+            thumbs_count: 0,
+            timeout: 10000,
+            parent_id: "main_slider",
+            container_class: "thumb_slider",
+            thumb_class: "thumbs",
+            spacing: 0,
+            processing: false,
+            hover: false,
+            next_class: "next",
+            prev_class: "prev",
+            timer: setTimeout(function () { })
+
+        });
+    </script>
+</body>
+</html>
